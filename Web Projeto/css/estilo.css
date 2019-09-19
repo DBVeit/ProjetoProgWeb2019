@@ -6,6 +6,7 @@ body {
             background-position: center;
             font-family: Arial, Helvetica, sans-serif;
 	}
+
 .buttonTrailer {
 	  background-color: #4CAF50;
 	  border: none;
@@ -55,6 +56,18 @@ h4.title {
 h6.title {
 	
 	color:white;
+}
+
+.Gnome{
+    width: 40px;
+    height:40px;
+}
+
+.search{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 2px;
+    box-sizing: border-box;
 }
 
 div.store {
