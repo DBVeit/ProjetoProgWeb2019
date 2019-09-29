@@ -20,6 +20,17 @@ body {
 	  cursor: pointer;
 }
 
+.buttonMenu{
+    background-color: #008CBA;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 3px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
 .buttonPage {
 	  background-color: #008CBA;
 	  border: none;
@@ -31,6 +42,8 @@ body {
 	  font-size: 16px;
 	  margin: 4px 2px;
 	  cursor: pointer;
+      height: 45px;
+      border-radius: 4px;
 } 
 
 p.font {
@@ -64,10 +77,12 @@ h6.title {
 }
 
 .search{
-    width: 100%;
+    width: 300px;
     padding: 12px 20px;
     margin: 8px 2px;
     box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
 }
 
 div.store {
@@ -107,3 +122,4 @@ div.store {
                 color: #fff;
                 font-size: 16px;
             }
+
