@@ -1,0 +1,125 @@
+body { 
+			margin: 0;
+            padding: 0;
+            background-image: url("../imagens/2.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, Helvetica, sans-serif;
+	}
+
+.buttonTrailer {
+	  background-color: #4CAF50;
+	  border: none;
+	  color: white;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+}
+
+.buttonMenu{
+    background-color: #008CBA;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 3px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.buttonPage {
+	  background-color: #008CBA;
+	  border: none;
+	  color: white;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+      height: 45px;
+      border-radius: 4px;
+} 
+
+p.font {
+
+  
+}
+
+h1.title {
+	
+	color:white;
+}
+
+h3.title {
+	
+	color:white;
+}
+
+h4.title {
+	
+	color:white;
+}
+
+h6.title {
+	
+	color:white;
+}
+
+.Gnome{
+    width: 40px;
+    height:40px;
+}
+
+.search{
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 2px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+}
+
+div.store {
+  margin: auto;
+  width: 60%;
+  padding: 30px;
+}
+        .box {
+            width: 520px;
+            height: 650px;
+            background: rgb(0,0,0);
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+        }
+
+        .box p {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        .box input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+            .box input[type="text"], input[type="password"] {
+                border: none;
+                border-bottom: 1px solid #fff;
+                background: transparent;
+                outline: none;
+                height: 40px;
+                color: #fff;
+                font-size: 16px;
+            }
+
