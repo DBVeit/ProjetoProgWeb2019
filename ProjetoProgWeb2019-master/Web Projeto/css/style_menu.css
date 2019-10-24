@@ -13,10 +13,27 @@
 	margin-top: 65px;
 }
 
+.subMenuButtons{
+	margin-top: 6px;
+	font-family: calibri, sans-serif;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	background-color: transparent;
+	border: none;
+}
+
+.subMenuButtons:hover{
+	background-color: white;
+	color: #008CBA;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
 .sidebarMenu{
 	position: fixed;
 	width: 200px;
-	height: 532px;
+	height: 531px;
 	background-color: #211d1d;
 	bottom: 0;
 	left: 0;
