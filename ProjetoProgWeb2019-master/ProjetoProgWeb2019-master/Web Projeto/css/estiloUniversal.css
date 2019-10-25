@@ -1,0 +1,196 @@
+.corpo{
+    margin: 0;
+    padding: 0;
+    background-image: url("../imagens/2.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttonMenu{
+    background-color: #008CBA;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 3px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.buttonPage {
+	background-color: #008CBA;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+    height: 45px;
+    border-radius: 4px;
+} 
+
+h3.title {
+	
+	color:white;
+}
+
+h4.title {
+	
+	color:white;
+}
+
+h6.title {
+	
+	color:white;
+}
+
+.Gnome{
+    width: 40px;
+    height:40px;
+}
+
+.search{
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 2px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    font-family: calibri, sans-serif;
+    font-size: 15px;
+}
+.box {
+    width: 520px;
+    height: 650px;
+    background: rgb(0,0,0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+        }
+
+.box p {
+     margin: 0;
+     padding: 0;
+     font-weight: bold;
+        }
+
+.box input {
+    width: 100%;
+    margin-bottom: 20px;
+        }
+
+.box input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+            }
+
+.box_2{
+    width: 650px;
+    height: 520px;
+    background: rgb(0,0,0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.sideButtons{
+    font-size: 15px;
+    font-family: calibri, sans-serif;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: white, solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 130px;
+    height: 50px;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.sideButtons:hover{
+    cursor: pointer;
+    background-color: #008CBA;
+    border-bottom: transparent;
+    color: white;
+}
+
+.textPage{
+    color: white;
+    font-family: calibri, sans-serif;
+}
+
+/*estilo.css original ends here */
+
+.menuTopo{
+	position: fixed;
+	width: 100%;
+	height: 65px;
+	background-color: #211d1d;
+}
+
+.subMenuTopo{
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	background-color: #008CBA;
+	margin-top: 65px;
+}
+
+.subMenuButtons{
+	margin-top: 6px;
+	font-family: calibri, sans-serif;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	background-color: transparent;
+	border: none;
+}
+
+.subMenuButtons:hover{
+	background-color: white;
+	color: #008CBA;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
+.sidebarMenu{
+	position: fixed;
+	width: 200px;
+	height: 630px;
+	background-color: #211d1d;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.sidebarList{
+	padding-left: 30px;
+	text-decoration: none;
+	color: white;
+	list-style-type: none;
+}
+
+.text1{
+	margin-top: 20px;
+	text-align: center;
+	margin-left: 30px;
+	vertical-align: middle;
+}
