@@ -1,0 +1,58 @@
+<list>
+	<content>
+		<email id="8">
+			<remetente>tuamae@gnome.com</remetente>
+			<assunto>Lista de compras</assunto>
+			<mensagem>Oi fio</mensagem>
+		</email>
+	</content>
+	<content>
+		<email id="7">
+			<remetente>paidefamilia@gnome.com</remetente>
+			<assunto>Ai que delicia</assunto>
+			<mensagem>Ahhhhhhhhhhhhhh</mensagem>
+		</email>
+	</content>
+	<content>
+		<email id="6">
+			<remetente>serjaoberranteiro@gnome.com</remetente>
+			<assunto>Aqui tem coragem</assunto>
+			<mensagem>Iaurrhauuuuuu!</mensagem>
+		</email>
+	</content>
+	<content>
+		<email id="5">
+			<remetente>sonic@gnome.com</remetente>
+			<assunto>Gotta Go Fast</assunto>
+			<mensagem>De way</mensagem>
+		</email>
+	</content>
+	<content>
+		<email id="4">
+			<remetente>tuamae@gnome.com</remetente>
+			<assunto>IMPORTANTE</assunto>
+			<mensagem>Fala pra sua irmã deixar de ser puta</mensagem>
+		</email>
+	</content>
+	<content>
+		<email id="3">
+			<remetente>teupai@gnome.com</remetente>
+			<assunto>MAIS IMPORTANTE QUE A MENSAGEM QUE A TUA MAE ENVIOU</assunto>
+			<mensagem>Fala pra teu irmão parar de bater punheta</mensagem>
+		</email>
+	</content>
+	<content>
+		<email id="2">
+			<remetente></remetente>
+			<assunto></assunto>
+			<mensagem></mensagem>
+		</email>
+	</content>
+	<content>
+		<email id="1">
+			<remetente></remetente>
+			<assunto></assunto>
+			<mensagem></mensagem>
+		</email>
+	</content>
+</list>
