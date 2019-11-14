@@ -1,0 +1,254 @@
+body{
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("../imagens/2.jpg");
+}
+
+.Gnome{
+    width: 40px;
+    height:40px;
+}
+
+.menuTopo{
+	overflow: hidden;
+	background-color: #211d1d;
+}
+
+/*.menuTopo a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}*/
+
+.menuTopo a:hover {
+	color: #9a9c9a;
+}
+
+.menuTopo a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.menuTopo .icon {
+	display: none;
+}
+
+.menuTopo.responsive a {
+	float: none;
+	display: block;
+	text-align: left;
+	}
+}
+
+.buttonMenu{
+    background-color: #008CBA;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 3px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.textPage{
+    color: white;
+    font-family: calibri, sans-serif;
+}
+
+.search{
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 2px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    font-family: calibri, sans-serif;
+    font-size: 15px;
+}
+
+.buttonPage {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    height: 45px;
+    border-radius: 4px;
+}
+
+.buttonPage:hover{
+	background-color: #00a2d6;
+	transition-duration: 0.5s;
+}
+
+/*.subMenuTopo{
+	overflow: hidden;
+	background-color: #008CBA;
+}*/
+
+.subMenuTopo{
+	overflow: hidden;
+	float: left;
+	display: block;
+	color: #008CBA;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	background-color: #008CBA;
+}
+
+.subMenuTopo a.active{
+	background-color: #4CAF50;
+	color: white;
+}
+
+.subMenuButtons{
+	font-family: calibri, sans-serif;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	background-color: transparent;
+	border: none;
+}
+
+.subMenuButtons:hover{
+	background-color: white;
+	color: #008CBA;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
+.sub_PageId{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.menuVertical {
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	height: 50%;
+ 	width: 250px;
+  	z-index: 1;
+  	bottom: 0
+  	left: 0;
+  	background-color: #211d1d;
+  	overflow-x: hidden;
+  	padding-top: 1px;
+  	margin-left: -20px;
+  	padding-right: 20px;
+  	padding-bottom: 10px;
+}
+
+.sideButtons{
+    font-size: 15px;
+    font-family: calibri, sans-serif;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: white, solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 200px;
+    height: 30px;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.sideButtons:hover{
+    cursor: pointer;
+    background-color: #008CBA;
+    border-bottom: transparent;
+    color: white;
+}
+
+.main {
+	margin-left: 160px; /* Same as the width of the sidenav */
+	font-size: 28px; /* Increased text to enable scrolling */
+	padding: 0px 10px;
+}
+
+.text1{
+	margin-top: 20px;
+	text-align: center;
+	margin-left: 30px;
+	vertical-align: middle;
+}
+
+.content{
+	float: right;
+	display: inline-block;
+	width: 80%;
+	height: 60%;
+	padding: 1px 1px 1px 1px;
+  	padding-bottom: 40px;
+  	background-color: white;
+  	margin-right: 15px;
+  	color: black;
+}
+
+table .tabela {
+	border-collapse: collapse;
+  	width: 100%;
+}
+
+.tabela th, .tabela td {
+  	text-align: left;
+  	padding: 8px;
+  	border-bottom: solid;
+  	border-color: #acadac;
+}
+
+.tabela tr:hover{
+	background-color: #d1d1d1;
+	cursor: pointer;
+	border: none;
+	color: black;
+}
+
+.tabela th {
+  	background-color: #4CAF50;
+  	color: white;
+}
+
+
+/*////////////////////////////////////////////////// Responsive Menus//////////////////////////////////////////*/
+@media screen and (max-width: 600px) {
+	.menuTopo a:not(:first-child) {display: none;}
+	.menuTopo a.icon {
+		float: right;
+	    display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.menuTopo.responsive {position: relative;}
+	.menuTopo.responsive .icon {
+	position: absolute;
+	right: 0;
+	top: 0;}
+@media screen and (max-width: 600px) {
+	.subMenuTopo a:not(:first-child) {display: none;}
+	.subMenuTopo a.icon {
+		float: right;
+	    display: block;
+	}
+}
+@media screen and (max-width: 600px) {
+	.subMenuTopo.responsive {position: relative;}
+	.subMenuTopo.responsive .icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+/*////////////////////////////////////////////////// Responsive Menus//////////////////////////////////////////*/
