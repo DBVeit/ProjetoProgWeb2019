@@ -1,34 +1,49 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+		<meta charset="utf-8">
+		<title>Gnome Mail - Entrar</title>
 		<script type="text/javascript" src="jquery/jquery.js"></script>
-		<script type="text/javascript" src="js/funcoes.js"></script>
+		<script type="text/javascript" src="js/funcaoIndexLogin.js"></script>
+		<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/estilo_index.css">
 	</head>
-	<body class="corpo">
-		<div class="box" align="center">
-			<table border="0" cellpadding="6">
-				<thead>
-					<h3 class="title">Connect to your account</h3>
-						<tr>
-							<td><h4 class="title">Username:</h4></td>
-							<td><input type="text" id="valor"></td>
-						</tr>
-				</thead>
-				<tbody>
+	<body>
+		<div class="loginBox" align="center">
+			<div>
+				<img class="Gnome" src="imagens/Gnome.png">
+			</div>
+			<div>
+				<h3 class="texts"> Gnome Mail </h3>
+			</div>
+			<table>
+				<thead class="texts">
 					<tr>
-						<td><h4 class="title">Password:</h4></td>
-						<td><input type = "password" ></td>
+						<th>Entrar Na Conta</th>
+					</tr>
+				</thead>
+				<tbody style="margin-top: 10px; margin-bottom: 60px;">
+					<tr>
+						<td class="texts" align="center">
+							<b>E-Mail:</b> <input type="text" id="emailLog" name="emailLog" placeholder="E-Mail">
+						</td>
+					</tr>
+					<tr>
+						<td class="texts" align="center">
+							<b>Senha:</b> <input type="password" id="password" name="password" placeholder="Senha">
+						</td>
 					</tr>
 					<tr>
 						<td align="center">
-							<a href="html/cadastro.html"><button class="buttonPage">Register</button></a>
-						</td>
-						<td align="center">
-							<a href="html/email.html"><button class="buttonPage" id="funcao">Log in</button></a>
+							<a href="html/cadastro.html"><button class="buttonAccess">Cadastrar</button></a>
+							<button class="buttonAccess" id="bAcessar">Entrar</button>
 						</td>
 					</tr>
 				</tbody>
 			</table>
+			<div class="copyright" style="margin-top: 70px;" align="center">
+				© Gnome Mail Team 2019
+			</div>
 		</div>
 	</body>
 </html>
