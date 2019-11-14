@@ -3,52 +3,98 @@
 	<head>
 		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 		<title>Gnome Mail</title>
-		<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+		<script type="text/javascript" src="../jquery/jquery.js"></script>
+		<script type="text/javascript" src="../js/menuToggle.js"></script>
+		<link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../imagens/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../css/estilo_main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
-	<body class="corpo">
-		<div align="left" class="menuTopo">
-			<header>
-				<div>
-					<table style="margin-left: 20px;">
-						<tr>
-							<td><button class="buttonMenu"><i class="fa fa-reorder" style="color: white;"></i></button></td>
-							<td><img class="Gnome" style="margin-left: 10px;" src="../imagens/Gnome.png"></td>
-							<td><h3 class="textPage" style="margin-left: 10px;"> Gnome Mail </h3></td>
-							<td><input class="search" style="margin-left: 10px;" type="text" placeholder="Pesquisar"></td>
-							<td><button class="buttonPage"><i class="fa fa-search"></i></button></td>
-						</tr>
-					</table>
-					<div class="subMenuTopo" style="margin-top: 0px;">
-						<a href="newMessage.html" style="margin-top: 30px; margin-left: 25px;"><button class="subMenuButtons"> + Nova Mensagem </button></a>
-						<a href="email.html" style="margin-left: 90px; margin-top: 90px;"><button class="subMenuButtons"> Caixa de Entrada </button></a>
-					</div>
-				</div>
-				
-			</header>
-			<div class="sidebarMenu">
-				<div class="sidebarList">
-					<li> <button class="sideButtons" style="margin-left: 10px;">Favoritos</button> </li>
-					<li> <button class="sideButtons" style="margin-top: 20px; margin-left: 10px;">Caixa de Entrada</button> </li>
-					<li> <button class="sideButtons" style="margin-top: 20px; margin-left: 10px;">Lixo Eletrônico</button> </li>
-					<li> <button class="sideButtons" style="margin-top: 20px; margin-left: 10px;">Rascunho</button> </li>
-					<li> <button class="sideButtons" style="margin-top: 20px; margin-left: 10px;">Itens Enviados</button> </li>
-					<li> <button class="sideButtons" style="margin-top: 20px; margin-left: 10px;">Itens Excluidos</button> </li>
-					<li> <button class="sideButtons" style="margin-top: 20px; margin-left: 10px;">Arquivo Morto</button> </li>
-				</div>
-			</div>
-		</div>
-		
-		<div align="center">
-			<table>
-				
+	<body>
+		<div class="menuTopo">
+			<table style="margin-left: 20px;">
+				<tr>
+					<td>
+						<button id="bMenu" class="buttonPage"><i class="fa fa-bars"></i></button>
+					</td>
+					<td>
+						<img class="Gnome" src="../imagens/Gnome.png">
+					</td>
+					<td>
+						<h3 class="textPage"> Gnome Mail </h3>
+					</td>
+					<td>
+						<input class="search" style="margin-left: 10px;" type="text" placeholder="Pesquisar">
+					</td>
+					<td>
+						<button class="buttonPage"><i class="fa fa-search"></i></button>
+					</td>
+					<td>
+						<a href="../Index.html" style="margin-left: 1200%; color: white;">Sair</a>
+					</td>
+				</tr>
 			</table>
 		</div>
-
-		<table>
-			<tr>
-				<input type="submit" value="Enviar">
-			</tr>
-		</table>
+		<div class="subMenuTopo" style="width: 1334px;">
+			<a href="newMessage.html" style="margin-left: 30px; margin-top: 30px; text-decoration: none;">
+				<button class="subMenuButtons"> + Nova Mensagem </button>
+			</a>
+			<a href="email.html" style=" margin-top: 90px; text-decoration: none; margin-left: 3%;">
+				<button class="subMenuButtons"> Caixa de Entrada </button>
+			</a>
+		</div>
+		<div class="content">
+			<table class="tabela">
+				<tr>
+					<td>Para: <input type="text" name="para"></td>
+				</tr>
+				<tr>
+					<td>Cc: <input type="text" name="copia"></td>
+				</tr>
+				<tr>
+					<td>Assunto: <input type="text" name="assunto"> </td>
+				</tr>
+				<tr>
+					<td><textarea placeholder="Mensagem"></textarea> </td>
+				</tr>
+			</table>
+		</div>
+		<div id="sideMenu" class="menuVertical">
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons" >Favoritos</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons" onclick="window.location.href='email.html'">Caixa de Entrada</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons">Lixo Eletrônico</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons">Rascunho</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons" onclick="window.location.href='enviados.html'">Itens Enviados</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons">Itens Excluidos</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons">Arquivo Morto</button>
+				</li>
+			</ul>
+		</div>
 	</body>
 </html>
