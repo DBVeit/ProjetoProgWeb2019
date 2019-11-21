@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		<title>Gnome Mail</title>
+		<script type="text/javascript" src="../jquery/jquery.js"></script>
+		<script type="text/javascript" src="../js/menuToggle.js"></script>
+		<script type="text/javascript" src="../js/funcaoGravar.js"></script>
+		<link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../imagens/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../css/estilo_main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="menuTopo">
+			<table style="margin-left: 20px;">
+				<tr>
+					<td>
+						<button id="bMenu" class="buttonPage"><i class="fa fa-bars"></i></button>
+					</td>
+					<td>
+						<img class="Gnome" src="../imagens/Gnome.png">
+					</td>
+					<td>
+						<h3 class="textPage"> Gnome Mail </h3>
+					</td>
+					<td>
+						<input class="search" style="margin-left: 10px;" type="text" placeholder="Pesquisar">
+					</td>
+					<td>
+						<a href="../Index.html" style="margin-left: 1200%; color: white;">Sair</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="subMenuTopo" style="width: 100%;">
+			<button class="subMenuButtons" id="bEnviar" style="margin-left: 70px;">Enviar <i class="fa fa-paper-plane"></i></button>
+			<a href="email.html" style=" margin-top: 90px; text-decoration: none; margin-left: 6%;">
+				<button class="subMenuButtons"> Caixa de Entrada </button>
+			</a>
+		</div>
+		<div class="content">
+			<table class="tabela">
+				<tr>
+					<td>Para: <input type="text" name="para" size="140" id="tPara"></td>
+				</tr>
+				<tr>
+					<td>Cc: <input type="text" name="copia" size="142" id="tCopia"></td>
+				</tr>
+				<tr>
+					<td>Assunto: <input type="text" name="assunto" size="137" id="tAssunto"> </td>
+				</tr>
+				<tr>
+					<td><textarea placeholder="Mensagem" name="mensagem" cols="150" rows="15" id="tMensagem" style="font-family: Arial, sans-serif;"></textarea> </td>
+				</tr>
+			</table>
+		</div>
+		<div id="sideMenu" class="menuVertical">
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons" >Favoritos</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons" onclick="window.location.href='email.html'">Caixa de Entrada</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons">Lixo Eletrônico</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons">Rascunho</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons" id="bListarEnviados" onclick="window.location.href='enviados.html'">Itens Enviados</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons">Itens Excluidos</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons">Arquivo Morto</button>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

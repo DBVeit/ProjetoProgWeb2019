@@ -1,0 +1,70 @@
+body{
+	background-image: url("../imagens/2.jpg");
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.formBox{
+	width: 500px;
+    height: 600px;
+    background-color: #211d1d;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+
+.formBox input[type="text"], input[type="password"] {
+	font-family: calibri, sans-serif;
+	margin-left: 10px;
+	border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.Gnome{
+    width: 40px;
+    height:40px;
+}
+
+.textPage{
+	font-family: calibri, sans-serif;
+}
+
+.texts{
+	color: white;
+}
+
+.buttonForm {
+	vertical-align: middle;
+	margin-top: 20px;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    cursor: pointer;
+    height: 45px;
+    width: 160px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.buttonForm:hover{
+	background-color: #00a2d6;
+	transition-duration: 0.5s;
+}
+
+.copyright{
+	color: white;
+	font-size: 10px;
+	margin-bottom: 16px;
+}
+
+.linkBack{
+	margin-top: -20px;
+	color: white;
+}

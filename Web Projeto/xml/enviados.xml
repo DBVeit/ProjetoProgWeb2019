@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lista>
+	<enviado>
+		<remetente>davi.veit@gnome.com</remetente>
+		<copia>davi.veit@gnome.com</copia>
+		<destinatario>davi.veit@gnome.com</destinatario>
+		<assunto>Teste</assunto>
+		<texto>Hello</texto>
+	</enviado>
+	<enviado>
+		<remetente>davi.veit@gnome.com</remetente>
+		<copia>davi.veit@gnome.com</copia>
+		<destinatario>davi.veit@gnome.com</destinatario>
+		<assunto>Teste</assunto>
+		<texto>Hello</texto>
+	</enviado>
+	<enviado>
+		<remetente>davi.veit@gnome.com</remetente>
+		<copia>davi.veit@gnome.com</copia>
+		<destinatario>davi.veit@gnome.com</destinatario>
+		<assunto>Teste</assunto>
+		<texto>Hello</texto>
+	</enviado>
+</lista>

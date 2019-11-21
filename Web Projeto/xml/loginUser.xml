@@ -1,0 +1,30 @@
+<users>
+	<user>
+		<nomeUser>Administrador</nomeUser>
+		<sobrenomeUser>Administrador</sobrenomeUser>
+		<username>admin</username>
+		<mailAddress>admin</mailAddress>
+		<password>admin</password>
+	</user>
+	<user>
+		<nomeUser>Davi</nomeUser>
+		<sobrenomeUser>Veit</sobrenomeUser>
+		<username>davi.veit</username>
+		<mailAddress>davi.veit@gnome.com</mailAddress>
+		<password>3997</password>
+	</user>
+	<user>
+		<nomeUser>Rodrigo</nomeUser>
+		<sobrenomeUser>Moreira</sobrenomeUser>
+		<username>rodrigo.moreira</username>
+		<mailAddress>rodrigo.moreira@gnome.com</mailAddress>
+		<password>moreira</password>
+	</user>
+	<user>
+		<nomeUser>Eduardo</nomeUser>
+		<sobrenomeUser>Lino</sobrenomeUser>
+		<username>lino</username>
+		<mailAddress>lino@gnome.com</mailAddress>
+		<password>1234</password>
+	</user>
+</users>

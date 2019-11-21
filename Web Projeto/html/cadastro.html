@@ -1,46 +1,67 @@
 <html>
-
 	<head>
-		<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
-		<script type="text/javascript"src="jquery/jquery.js"></script>
-		<script type="text/javascript" src="../js/funcoes.js"></script>
+		<meta charset="utf-8">
+		<title>Gnome Mail - Cadastro</title>
+		<script type="text/javascript" src="../jquery/jquery.js"></script>
+		<script type="text/javascript" src="../js/funcaoGravarCadastro.js"></script>
+		<link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../imagens/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../css/estilo_cadastro.css"/>
 	</head>
-
 	<body>
-		<div class="box" align="center">
-			<table border="0" cellpadding="3">
-				<thead>
-					<h3 class="title">Register your account</h3>
+		<div class="formBox" align="center">
+			<div class="linkBack" align="left">
+				<a href="../Index.html">Voltar</a>
+			</div>
+			<div>
+				<img class="Gnome" src="../imagens/Gnome.png">
+			</div>
+			<div>
+				<h3 class="texts">Gnome Mail</h3>
+				<h3 class="texts">Registrar Nova Conta</h3>
+			</div>
+			<table align="center">
+				<tbody style="margin-top: 10px; margin-bottom: 60px;">
 					<tr>
-						<td><h4 class="title">User:</h4></td>
-						<td><input type = "text" ></td>
+						<td class="texts" align="right">
+							<b>Nome: </b> <input type="text" name="nome" id="tNome" placeholder="Nome">
+						</td>
 					</tr>
-				</thead>
-
-				<tbody>
-					
-						<tr>
-							<td><h4 class="title">Password:</h4></td>
-							<td><input type = "password" ></td>
-						</tr>
-						<tr>
-							<td><h4 class="title">Confirm Password:</h4></td>
-							<td><input type = "password" ></td>
-						</tr>
-						<tr>
-							<td><h4 class="title">Name:</h4></td>
-							<td><input type = "text" ></td>
-						</tr>
-						<tr>
-							<td><h4 class="title">E-mail:</h4></td>
-							<td><input type="text" size = "50" ></td>
-						</tr>
-						<tr>
-						<td colspan ="2" align ="center"><button onclick="location.href='email.html'" class = "buttonPage">Register</button></td>
-						</tr>
-				</body>
+					<tr>
+						<td class="texts" align="right">
+							<b>Sobrenome: </b> <input type="text" name="sobrenome" id="tSobrenome" placeholder="Sobrenome">
+						</td>
+					</tr>
+					<tr>
+						<td class="texts" align="right">
+							<b>Usuário: </b> <input type="text" name="usuario" id="tUsuario" placeholder="Usuário">
+						</td>
+					</tr>
+					<tr>
+						<td class="texts" align="right">
+							<b>E-mail:</b> <input type="text" size="20" name="email" id="tEmail" placeholder="E-Mail">
+						</td>
+					</tr>
+					<tr>
+						<td class="texts" align="right">
+							<b>Senha:</b> <input type="password" name="senha" id="tSenha" placeholder="Senha">
+						</td>
+					</tr>
+					<tr>
+						<td class="texts" align="right">
+							<b>Confirmar Senha:</b> <input type="password" name="confirmarSenha" id="tConfirmarSenha" placeholder="Confirmar Senha">
+						</td>
+					</tr>
+					<tr>
+						<td align="center" colspan="2">
+							<button type="submit" class="buttonForm" id="bConfirmar">Confirmar Cadastro</button></a>
+						</td>
+					</tr>
+				</tbody>
 			</table>
+			<div class="copyright" style="margin-top: 30px;" align="center">
+				© Gnome Mail Team 2019
+			</div>
 		</div>
 	</body>
-
 </html>

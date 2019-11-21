@@ -1,62 +1,136 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-	<title>Gonme Mail</title>
-	<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/style_menu.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-	<div align="left" class="menuTopo">
-		<table>
-			<tr>
-				<td><button class="buttonMenu"><i class="fa fa-reorder" style="color: white;"></i></button></td>
-				<td><img class ="Gnome" src="../imagens/Gnome.png"></td>
-				<td><h3 class="title"> Gnome Mail </h3></td>
-				<td><input class="search" type="text"  placeholder="Pesquisar"></td>
-				<td><button class = "buttonPage"><i class="fa fa-search"></i></button></td>
-			</tr>
-		</table>
-		<div class="sidebarMenu">
-			<div class="sidebarList">
-				<li> Favoritos </li>
-				<li> Caixa de Entrada </li>
-				<li> Lixo Eletrônico </li>
-				<li> Rascunho </li>
-				<li> Itens Enviados </li>
-				<li> Itens Excluidos </li>
-				<li> Arquivo Morto </li>
-			</div>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		<title>Gnome Mail</title>
+		<script type="text/javascript" src="../jquery/jquery.js"></script>
+		<script type="text/javascript" src="../js/menuToggle.js"></script>
+		<script type="text/javascript" src="../js/procura.js"></script>
+		<link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../imagens/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../css/estilo_main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="menuTopo">
+			<table style="margin-left: 20px;">
+				<tr>
+					<td>
+						<button id="bMenu" class="buttonPage"><i class="fa fa-bars"></i></button>
+					</td>
+					<td>
+						<img class="Gnome" src="../imagens/Gnome.png">
+					</td>
+					<td>
+						<h3 class="textPage"> Gnome Mail </h3>
+					</td>
+					<td>
+						<input class="search" id="procurar" style="margin-left: 10px;" type="text" placeholder="Pesquisar">
+					</td>
+					<td>
+						<a href="../Index.html" style="margin-left: 1200%; color: white;">Sair</a>
+					</td>
+				</tr>
+			</table>
 		</div>
-	</div>
-	<div class="subMenuTopo">
-			<a href="#" style="padding-top: 30px; padding-left: 30px;"> + Nova Mensagem </a>
-			<a href="#" style="padding-left: 90px; padding-top: 90px;"> Caixa de Entrada </a>
+		<div class="subMenuTopo" style="width: 100%;">
+			<a href="newMessage.html" style="margin-left: 30px; margin-top: 30px; text-decoration: none;">
+				<button class="subMenuButtons"> + Nova Mensagem </button>
+			</a>
+			<a href="email.html" style=" margin-top: 90px; text-decoration: none; margin-left: 3%;">
+				<button class="subMenuButtons" id=""> Caixa de Entrada </button>
+			</a>
 		</div>
-	<div align="center">
-		
-
-		<table>
-			<tr>
-				<td> <h6 class="title">placeholder email</td>
-			</tr>
-			<tr>
-				<td> <h6 class="title">placeholder email</td>
-			</tr>
-			<tr>
-				<td> <h6 class="title">placeholder email</td>
-			</tr>
-			<tr>
-				<td> <h6 class="title">placeholder email</td>
-			</tr>
-			<tr>
-				<td> <h6 class="title">placeholder email</td>
-			</tr>
-			<tr>
-				<td> <h6 class="title">placeholder email</td>
-			</tr>
-		</table>
-	</div>
-</body>
+		<div class="content">
+			<table class="tabela" id="listagem">
+				<tr>
+					<td style="word-wrap: break-word;"><b>Remetente:</b> team@gnome.com </td>
+					<td style="word-wrap: break-word;"><b>Assunto:</b> Teste10 </td>
+					<td style="word-wrap: break-word;">Este é um teste de email. Favor não responder. Leia atentamente o conteúdo a seguir para...</td>
+				</tr>
+				<tr>
+					<td style="word-wrap: break-word;"><b>Remetente:</b> team@gnome.com </td>
+					<td style="word-wrap: break-word;"><b>Assunto:</b> Teste9 </td>
+					<td style="word-wrap: break-word;">Este é um teste de email. Favor não responder. Leia atentamente o conteúdo a seguir para...</td>
+				</tr>
+				<tr>
+					<td style="word-wrap: break-word;"><b>Remetente:</b> team@gnome.com </td>
+					<td style="word-wrap: break-word;"><b>Assunto:</b> Teste8 </td>
+					<td style="word-wrap: break-word;">Este é um teste de email. Favor não responder. Leia atentamente o conteúdo a seguir para...</td>
+				</tr>
+				<tr>
+					<td style="word-wrap: break-word;"><b>Remetente:</b> team@gnome.com </td>
+					<td style="word-wrap: break-word;"><b>Assunto:</b> Teste7 </td>
+					<td style="word-wrap: break-word;">Este é um teste de email. Favor não responder. Leia atentamente o conteúdo a seguir para...</td>
+				</tr>
+				<tr>
+					<td style="word-wrap: break-word;"><b>Remetente:</b> team@gnome.com </td>
+					<td style="word-wrap: break-word;"><b>Assunto:</b> Teste6 </td>
+					<td style="word-wrap: break-word;">Este é um teste de email. Favor não responder. Leia atentamente o conteúdo a seguir para...</td>
+				</tr>
+				<tr>
+					<td style="word-wrap: break-word;"><b>Remetente:</b> team@gnome.com </td>
+					<td style="word-wrap: break-word;"><b>Assunto:</b> Teste5 </td>
+					<td style="word-wrap: break-word;">Este é um teste de email. Favor não responder. Leia atentamente o conteúdo a seguir para...</td>
+				</tr>
+				<tr>
+					<td style="word-wrap: break-word;"><b>Remetente:</b> team@gnome.com </td>
+					<td style="word-wrap: break-word;"><b>Assunto:</b> Teste4 </td>
+					<td style="word-wrap: break-word;">Este é um teste de email. Favor não responder. Leia atentamente o conteúdo a seguir para...</td>
+				</tr>
+				<tr>
+					<td style="word-wrap: break-word;"><b>Remetente:</b> team@gnome.com </td>
+					<td style="word-wrap: break-word;"><b>Assunto:</b> Teste3 </td>
+					<td style="word-wrap: break-word;">Este é um teste de email. Favor não responder. Leia atentamente o conteúdo a seguir para...</td>
+				</tr>
+				<tr>
+					<td style="word-wrap: break-word;"><b>Remetente:</b> team@gnome.com </td>
+					<td style="word-wrap: break-word;"><b>Assunto:</b> Teste2 </td>
+					<td style="word-wrap: break-word;">Este é um teste de email. Favor não responder. Leia atentamente o conteúdo a seguir para...</td>
+				</tr>
+				<tr>
+					<td style="word-wrap: break-word;"><b>Remetente:</b> team@gnome.com </td>
+					<td style="word-wrap: break-word;"><b>Assunto:</b> Teste1 </td>
+					<td style="word-wrap: break-word;">Este é um teste de email. Favor não responder. Leia atentamente o conteúdo a seguir para...</td>
+				</tr>
+			</table>
+		</div>
+		<div id="sideMenu" class="menuVertical">
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons">Favoritos</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons" onclick="window.location.href='email.html'" id="bListar">Caixa de Entrada</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons">Lixo Eletrônico</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons">Rascunho</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons" id="bListarEnviados" onclick="window.location.href='enviados.html'">Itens Enviados</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons">Itens Excluidos</button>
+				</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>
+					<button class="sideButtons">Arquivo Morto</button>
+				</li>
+			</ul>
+		</div>
+	</body>
 </html>

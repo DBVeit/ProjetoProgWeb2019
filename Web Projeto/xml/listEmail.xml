@@ -1,0 +1,38 @@
+<list>
+	<content>
+		<email>
+			<remetente>gugugaiteiro@gnome.com</remetente>
+			<copia>rodrigo.moreira@gnome.com</copia>
+			<destinatario>davi.veit@gnome.com</destinatario>
+			<assunto>Cepo de madeira</assunto>
+			<texto>Um cepo de madeira...</texto>
+		</email>
+	</content>
+	<content>
+		<email>
+			<remetente>paidefamilia@gnome.com</remetente>
+			<copia>rodrigo.moreira@gnome.com</copia>
+			<destinatario>davi.veit@gnome.com</destinatario>
+			<assunto>Ai que delicia caaara</assunto>
+			<texto>Aaaaaaaaaaaiiiii</texto>
+		</email>
+	</content>
+	<content>
+		<email>
+			<remetente>serjaoberranteiro@gnome.com</remetente>
+			<copia>rodrigo.moreira@gnome.com</copia>
+			<destinatario>davi.veit@gnome.com</destinatario>
+			<assunto>Aqui tem coragem</assunto>
+			<texto>Iaurrhauuuuuu!</texto>
+		</email>
+	</content>
+	<content>
+		<email>
+			<remetente>sonic@gnome.com</remetente>
+			<copia>rodrigo.moreira@gnome.com</copia>
+			<destinatario>davi.veit@gnome.com</destinatario>
+			<assunto>Gotta Go Fast</assunto>
+			<texto>De way</texto>
+		</email>
+	</content>
+</list>
